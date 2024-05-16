@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+
+
+
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hola Bienvenido  👋</div>
+    <div class="text-5xl font-bold">Soy Fernando</div>
+    <div class="text-3xl py-3 font-bold">Programador y Desarrollador</div>
+    <div class="py-2">
+      <text class="text-lg">
+        Esta es una pagina web desarrollada por mi la cual retrata mis habilidades y proyectos que he realizado. 
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="mailto:fercho15mh@gmail.com" target="_blank" referrerpolicy="no-referrer-when-downgrade"> Contactame!</a>
+     
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Mis Proyectos  {"</>"}</div>
+  </div>
+<HorizontalCard
+  title="Portafolio Digital"
+  img="/web.jpeg"
+  desc="Este proyecto es un portafolio digital el cual fue desarrollado para la presentacion de mis habilidades y proyectos que he realizado. Ademas de ser una web personal para la presentacion de mi curriculum"
+  url="#"
+    badge="NEW"
+  />
+  <HorizontalCard
+    title="Pagina Proyecto Social"
+    img="/post_img.webp"
+    desc="Esta es una web desarrollada por mi la cual tiene como objetivo ser una web informativa acerca de diferentes tipos de cuidados de plantas las cuales van a estar en venta ademas de informar acerca de la concientizacion de su cuidado."
+    url="#"
+    badge="En Desarrollo"
+  />
+  
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Pagina Web Personal"
+    img="/avatar.jpeg"
+    desc="Esta es una web personal desarollada para la presentacion del curriculum de mi hermana con todo lo necesario con su informacion contacto etc. Todo dirigido a empresas y otras personas para la contratacion de sus servicios"
+    url="http://janette.surge.sh/"
+  />
+
+
+ 
+</BaseLayout>

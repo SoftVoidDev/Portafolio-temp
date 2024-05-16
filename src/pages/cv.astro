@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resumen" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Resumen</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Soy Apasionado Desarrollador Junior con habilidades en diseño web y desarrollo de aplicaciones móviles. Creativo y orientado a resultados, con una sólida base en lenguajes de programación como HTML, CSS y JavaScript. Comprometido a ofrecer soluciones digitales impactantes que satisfagan las necesidades del cliente y superen expectativas.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Educacion</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+    title="Bachillerato"
+    subtitle="2022-Actualidad en Bachillerato Tecnologico en Computacion Fundacion Azteca, Ciudad de Mexico, Mexico"
+  />
+    <TimeLineElement
+      title="Secundaria"
+      subtitle="2019-2022 en Plantel Fundacion Azteca, Ciudad de Mexico, Mexico"
+    />
+    <TimeLineElement
+      title="Primaria"
+      subtitle="2013-2019 en Escuela Gral. Primaria Francisco Villa, Estado de Mexico, Mexico"
+    />
+  </div>
+
+  
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Creatividad</li>
+    <li>Persistencia</li>
+    <li>Adaptabilidad</li>
+    <li>Colaboración</li>
+    <li>Autodisciplina</li>
+    <li>Curiosidad</li>
+    <li>Detallista</li>
+    <li>Proactivo</li>
+    <li>Tenaz</li>
+    <li>Trabajo en equipo</li>
+  </ul>
+</BaseLayout>
