@@ -8,3 +8,11 @@ export default defineConfig({
   site: 'https://astrofy-template.netlify.app',
   integrations: [mdx(), sitemap(), tailwind()]
 });
+import vercel from '@astrojs/vercel/serverless';
+
+export default defineConfig({
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
+});
